@@ -1,11 +1,11 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '@/src/components/Sidebar';
 
 export default function ReportPage() {
   function Row({ label, value, valueClass = "" }: any) {
   return (
-    <div className="flex justify-between text-sm border-b w-full">
-      <span className="text-[#A5A5A5] text-lg">{label}</span>
+    <div className="flex justify-between text-sm border-b border-gray-200 w-full">
+      <span className="text-black-500 text-lg">{label}</span>
       <span className={`font-medium text-lg ${valueClass}`}>{value}</span>
     </div>
   );

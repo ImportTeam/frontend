@@ -1,5 +1,13 @@
-[00:00:02.122] Server  LOG      ✓ Ready in 1811ms
-[00:01:57.216] Server  LOG      ○ Compiling / ...
-[00:03:53.800] Server  LOG      ○ Compiling /dashboard ...
-[00:03:59.492] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:03:59.603] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:04.521] Server  LOG      ✓ Ready in 4s
+[00:00:14.329] Server  LOG      ○ Compiling / ...
+[00:01:40.763] Server  LOG      ○ Compiling /profile ...
+[00:01:42.812] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:22:35.626] Server  ERROR    ⨯ ReferenceError: name is not defined
+[00:22:36.193] Browser ERROR   uncaughtError: ReferenceError: name is not defined
+[00:22:40.082] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:40.347] Server  ERROR    ⨯ ReferenceError: name is not defined
+[00:22:49.374] Browser ERROR   uncaughtError: ReferenceError: name is not defined
+[00:23:17.516] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:45:05.769] Server  LOG      ○ Compiling /dashboard ...
+[00:45:07.101] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:45:07.101] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

@@ -1,6 +1,6 @@
 // app/dashboard/page.tsx
 
-import Sidebar from "../components/Sidebar";
+import Sidebar from '@/src/components/Sidebar';
 
 export default function DashboardPage() {
   return (
@@ -63,15 +63,14 @@ export default function DashboardPage() {
           <h3 className="font-bold text-gray-900 mb-5 text-base">최근 이용 사이트별 결제수단</h3>
 
           {[1, 2, 3].map((i) => (
-            <div key={i} className="flex justify-between items-center py-3 border-b last:border-b-0 border-gray-100">
+            <div key={i} className="flex justify-between items-center py-3 border-b border-gray-200">
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 shrink-0" />
                 <div>
                   <p className="font-semibold text-gray-900 text-sm">쿠팡</p>
                   <p className="text-sm text-gray-500 mt-0.5">KB 국민카드</p>
                 </div>
               </div>
-              <p className="text-gray-500 text-sm font-medium">5회 이용</p>
+              <p className="text-gray-500 text-sm font-medium mt-6">5회 이용</p>
             </div>
           ))}
         </section>

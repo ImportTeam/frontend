@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/LoginHeader";
+import Header from "../components/LoginHeader";
 
 export const metadata: Metadata = {
   title: "PicSel",
