@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 
-export default function Header() {
+export default function LoginHeader() {
   const [activeSection, setActiveSection] = useState('/')
   const [isDropDownOpen, setIsDropDownOpen] = useState(false)
   const [isLoggedIn, setIsLoggedIn] = useState(true)
@@ -13,6 +13,20 @@ export default function Header() {
   useEffect(() => {
     setActiveSection(pathname)
   }, [pathname])
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      setIsDropDownOpen(false)
+    }
+  }
+
+  document.addEventListener('mousedown', handleClickOutside)
+
+  return () => {
+    document.removeEventListener('mousedown', handleClickOutside)
+  }
+}, [dropdownRef])
 
   const handleNavClick = (id: string) => {
 
@@ -29,7 +43,7 @@ export default function Header() {
   }
   
   const handleLogout = () => {
-    setIsLoggedIn(false)
+    setIsLoggedIn(true)
     setIsDropDownOpen(false)
     router.push('/')
   }
@@ -84,7 +98,7 @@ export default function Header() {
                   <button
                     onClick={() => setIsDropDownOpen(!isDropDownOpen)}
                     className="flex items-center space-x-2 px-5 py-2 border-2 border-[#ECECEC] rounded-md hover:bg-gray-50 transition-colors duration-200"
-                  >
+                    >
                         <img src="user.png" alt="사용자" className='w-5 h-6' />
                         <span className='font-semibold text-[#545777]'>홍길동</span>님
                         <svg
@@ -100,7 +114,7 @@ export default function Header() {
 
                       {/* 드롭다운 메뉴*/}
                       {isDropDownOpen && (
-                        <div className='absolute right-0 mt-2 w-56 bg-white border-[#ECECEC] rounded-lg shadow-lg overflow-hidden z-50'>
+                        <div className='absolute right-0 mt-2 w-40 bg-white border-[#ECECEC] rounded-lg shadow-lg overflow-hidden z-50'>
                           <button
                               onClick={() => {
                                 router.push('/profile')
@@ -109,7 +123,7 @@ export default function Header() {
                               className='w-full flex items-center space-x-3 px-4 py-4 hover:bg-gray-50 transition-colors duration-200'
                           >
                             <img src="user.png" alt="프로필" className='w-5' />
-                            <span className='text-[#535353] font-bold'>내 프로필</span>
+                            <span className='cursor-pointer text-[#535353] font-bold'>내 프로필</span>
                           </button>
 
                           <button
@@ -120,7 +134,7 @@ export default function Header() {
                               className='w-full flex items-center space-x-3 px-4 py-3 hover:bg-gray-50 transition-colors duration-200'
                             >
                               <img src='setting.png' alt="설정" className='w-5' />
-                              <span className='text-[#535353] font-bold'>설정</span>
+                              <span className='cursor-pointer text-[#535353] font-bold'>설정</span>
                             </button>
 
                             <div className='border-t border-gray-200'></div>
@@ -130,7 +144,7 @@ export default function Header() {
                               className="w-full flex items-center space-x-3 px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
                             >
                               <img src="/exit.png" alt="로그아웃" className="w-5 h-5" />
-                              <span className="text-red-500 font-bold">로그아웃</span>
+                              <span className="cursor-pointer text-red-500 font-bold">로그아웃</span>
                             </button>
                           </div>
                       )}
@@ -143,10 +157,12 @@ export default function Header() {
                 >
                   로그인
                   </button>
-            )}
+  )
+}
           </div>
         </div>
       </div>
     </header>
   )
 }
+

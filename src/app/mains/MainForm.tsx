@@ -106,7 +106,7 @@ export default function MainPage() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
             <div className="text-[#A81EBD] inline-block bg-[#FD69FF] text-xs px-3 py-1 rounded-full mb-4">
               혜택 자동 추적 및 알림 기능
