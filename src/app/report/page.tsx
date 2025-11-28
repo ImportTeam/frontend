@@ -37,9 +37,9 @@ function InsightBox({ color, title, titleColor, textColor, children }: any) {
 
   return (
     <div className="flex min-h-screen bg-[#FFFCF9]">
-
-      {/* 왼쪽 사이드바 */}
-      <Sidebar />
+      
+            {/* 사이드바 */}
+            <Sidebar />
 
         {/* 본문 */}
         <main className="flex-1 px-10 py-8 overflow-y-auto">

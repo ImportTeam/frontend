@@ -96,7 +96,7 @@ const SecurityCard: React.FC<{ user: UserProfile }> = ({ user }) => (
         <p className="text-base font-medium text-gray-900">비밀번호 변경</p>
         <p className="text-sm text-gray-500">마지막 변경: {user.lastPasswordChange}</p>
       </div>
-      <button className="px-3 py-1.5 border border-gray-300 text-sm font-medium rounded-lg hover:bg-gray-50 transition duration-150">
+      <button className="cursor-pointer px-3 py-1.5 border border-gray-300 text-sm font-medium rounded-lg hover:bg-gray-50 transition duration-150">
         변경
       </button>
     </div>
@@ -110,7 +110,7 @@ const SecurityCard: React.FC<{ user: UserProfile }> = ({ user }) => (
           최근 로그인: {user.lastLoginDevice}
         </p>
       </div>
-      <button className="px-3 py-1.5 border border-gray-300 text-sm font-medium rounded-lg hover:bg-gray-50 transition duration-150">
+      <button className="cursor-pointer px-3 py-1.5 border border-gray-300 text-sm font-medium rounded-lg hover:bg-gray-50 transition duration-150">
         관리
       </button>
     </div>
@@ -121,7 +121,7 @@ const ProfilePage: React.FC = () => {
   const user = mockUser;
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 sm:p-6 md:p-8 lg:p-10">
+    <div className="min-h-screen bg-[#FFFCF9] p-4 sm:p-6 md:p-8 lg:p-10">
       {/* 헤더를 제외한 본문 영역 타이틀 */}
       <div className="max-w-4xl mx-auto">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">내 프로필</h1>

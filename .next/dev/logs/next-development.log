@@ -1,13 +1,150 @@
-[00:00:04.521] Server  LOG      ✓ Ready in 4s
-[00:00:14.329] Server  LOG      ○ Compiling / ...
-[00:01:40.763] Server  LOG      ○ Compiling /profile ...
-[00:01:42.812] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:22:35.626] Server  ERROR    ⨯ ReferenceError: name is not defined
-[00:22:36.193] Browser ERROR   uncaughtError: ReferenceError: name is not defined
-[00:22:40.082] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:22:40.347] Server  ERROR    ⨯ ReferenceError: name is not defined
-[00:22:49.374] Browser ERROR   uncaughtError: ReferenceError: name is not defined
-[00:23:17.516] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:45:05.769] Server  LOG      ○ Compiling /dashboard ...
-[00:45:07.101] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:45:07.101] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:02.105] Server  LOG      ✓ Ready in 1771ms
+[00:00:59.886] Server  LOG      ○ Compiling / ...
+[00:02:08.035] Server  LOG      ○ Compiling /dashboard ...
+[00:02:12.403] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:02:12.535] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:28.084] Server  ERROR    ⨯ ./src/app/page.tsx:1:1
+Module not found: Can't resolve './mains/LoginMainFormMainForm'
+> 1 | import MainForm from "./mains/LoginMainFormMainForm";
+    | ^
+  2 |
+  3 | export default function MainPage() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:28.267] Browser ERROR   ./src/app/page.tsx:1:1
+Module not found: Can't resolve './mains/LoginMainFormMainForm'
+> 1 | import MainForm from "./mains/LoginMainFormMainForm";
+    | ^
+  2 |
+  3 | export default function MainPage() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:29.480] Server  ERROR    ⨯ ./src/app/page.tsx:1:1
+Module not found: Can't resolve './mains/LoginMainFormMainForm'
+> 1 | import MainForm from "./mains/LoginMainFormMainForm";
+    | ^
+  2 |
+  3 | export default function MainPage() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:29.836] Browser ERROR   ./src/app/page.tsx:1:1
+Module not found: Can't resolve './mains/LoginMainFormMainForm'
+> 1 | import MainForm from "./mains/LoginMainFormMainForm";
+    | ^
+  2 |
+  3 | export default function MainPage() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:34.239] Browser ERROR   uncaughtError: Error: Module not found: Can't resolve './mains/LoginMainFormMainForm'
+> 1 | import MainForm from "./mains/LoginMainFormMainForm";
+    | ^
+  2 |
+  3 | export default function MainPage() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+
+[00:02:42.970] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:43.098] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:43.694] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:05.242] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:03:05.242] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:44.579] Server  LOG      ○ Compiling /report ...
+[00:10:11.663] Server  ERROR    ⨯ ./src/app/report/page.tsx
+Error:   × Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ╭─[C:\Users\eye54\OneDrive\바탕 화면\import1\src\app\report\page.tsx:134:1]
+ 131 │         </main>
+ 132 │       </div>
+ 133 │   );
+ 134 │ }
+     · ▲
+ 135 │ 
+     ╰────
+  × Expected '</', got '<eof>'
+     ╭─[C:\Users\eye54\OneDrive\바탕 화면\import1\src\app\report\page.tsx:135:3]
+ 133 │   );
+ 134 │ }
+ 135 │ 
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/report/page.tsx
+[00:10:11.862] Browser ERROR   ./src/app/report/page.tsx
+Error:   × Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ╭─[C:\Users\eye54\OneDrive\바탕 화면\import1\src\app\report\page.tsx:134:1]
+ 131 │         </main>
+ 132 │       </div>
+ 133 │   );
+ 134 │ }
+     · ▲
+ 135 │ 
+     ╰────
+  × Expected '</', got '<eof>'
+     ╭─[C:\Users\eye54\OneDrive\바탕 화면\import1\src\app\report\page.tsx:135:3]
+ 133 │   );
+ 134 │ }
+ 135 │ 
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/report/page.tsx
+[00:10:18.402] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ╭─[C:\Users\eye54\OneDrive\바탕 화면\import1\src\app\report\page.tsx:134:1]
+ 131 │         </main>
+ 132 │       </div>
+ 133 │   );
+ 134 │ }
+     · ▲
+ 135 │ 
+     ╰────
+  × Expected '</', got '<eof>'
+     ╭─[C:\Users\eye54\OneDrive\바탕 화면\import1\src\app\report\page.tsx:135:3]
+ 133 │   );
+ 134 │ }
+ 135 │ 
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[00:10:19.339] Browser ERROR   ./src/app/report/page.tsx
+Error:   × Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ╭─[C:\Users\eye54\OneDrive\바탕 화면\import1\src\app\report\page.tsx:134:1]
+ 131 │         </main>
+ 132 │       </div>
+ 133 │   );
+ 134 │ }
+     · ▲
+ 135 │ 
+     ╰────
+  × Expected '</', got '<eof>'
+     ╭─[C:\Users\eye54\OneDrive\바탕 화면\import1\src\app\report\page.tsx:135:3]
+ 133 │   );
+ 134 │ }
+ 135 │ 
+     ╰────
+
+Caused by:
+    Syntax Error
+[00:10:24.036] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:10:24.095] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:10:24.364] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:10:27.204] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:27.919] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:23:35.138] Server  LOG      ○ Compiling /_not-found ...
+[00:23:40.560] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:23:40.560] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:01:02.461] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:03:44.697] Server  LOG      ○ Compiling /profile ...
+[01:03:48.578] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

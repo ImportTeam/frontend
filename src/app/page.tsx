@@ -1,4 +1,4 @@
-import MainForm from "./mains/MainForm";
+import MainForm from "./mains/LoginMainForm";
 
 export default function MainPage() {
   return (

@@ -22,10 +22,10 @@ export default function DashboardPage() {
           </p>
 
           <div className="flex space-x-3 mt-4">
-            <button className="px-5 py-2.5 bg-black text-white rounded-lg font-medium text-sm hover:bg-gray-800">
+            <button className="cursor-pointer px-5 py-2.5 bg-black text-white rounded-lg font-medium text-sm hover:bg-gray-800">
               내 리포트 보기
             </button>
-            <button className="px-5 py-2.5 bg-white border border-gray-300 rounded-lg font-medium text-sm hover:bg-gray-50">
+            <button className="cursor-pointer px-5 py-2.5 bg-white border border-gray-300 rounded-lg font-medium text-sm hover:bg-gray-50">
               결제수단 관리
             </button>
           </div>
