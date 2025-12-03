@@ -1,2 +1,14 @@
-[00:00:01.908] Server  LOG      ✓ Ready in 1614ms
-[00:00:12.412] Server  LOG      ○ Compiling / ...
+[00:00:02.023] Server  LOG      ✓ Ready in 1738ms
+[00:00:18.098] Server  LOG      ○ Compiling /dashboard ...
+[00:00:24.300] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:24.300] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:35.121] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:01:35.122] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:42.630] Server  LOG      ○ Compiling /report ...
+[00:03:48.238] Server  LOG      ○ Compiling /_not-found ...
+[00:05:19.889] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[00:05:31.423] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:05:31.423] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:05:39.806] Browser WARN    Image with src "/dashboard_report.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:05:47.023] Server  LOG      ○ Compiling /guide ...
+[00:05:51.725] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
